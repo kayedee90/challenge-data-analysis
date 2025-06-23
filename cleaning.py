@@ -4,7 +4,6 @@ import numpy as np
 
 
 def split_type_column(df):
-
     def type_split(row):
         if '(' in row:
             subtype = row.split('(')[0].strip() 
@@ -53,8 +52,6 @@ for column in df.columns:
 # Print the cleanup summary 
 print(f"Duplicates removed: {duplicates_removed}")
 print(f"String values modified by whitespace stripping: {modified_count}")
-    
-
 
 # removing rows living area empty
 df.rename(columns={
