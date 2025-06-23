@@ -1,95 +1,37 @@
 import pandas as pd
 import numpy as np
 
+df = pd.read_csv("Data/Raw_data.csv")  
 
 
-def split_type_column(df):
-    def type_split(row):
-        if '(' in row:
-            subtype = row.split('(')[0].strip() 
-            type = row.split('(')[1][:-1].strip() 
-        else:
-            subtype = row 
-            type = row 
-        return [subtype, type]
-    
-    df[['subtype', 'type']] = df['type'].apply(type_split).apply(pd.Series)
+# Clean column names
+# from columns delete spaces begin and end, put lower case and replace space by underscore
+df.columns = df.columns.str.strip().str.lower().str.replace(" ", "_")
 
-    df.insert(2, 'subtype', df.pop('subtype'))
+# Drop unused columns
+df.drop(columns=['unnamed:_0', 'url', 'id', 'monthlycost', 'hasbalcony', 'accessibledisabledpeople',
+                 'bathroomcount','roomcount','hasattic','hasbasement','hasdressingroom',
+                'diningroomsurface','hasdiningroom','floorcount','streetfacadewidgth',
+                'floodzonetype','heatingtype','hasheatpump','hasvoltaicpanels',
+                'hasthermicpanels','kitchensurface','kitchentype','haslivingroom',
+                'livingroomsurface','gardenorientation','hasairconditioning',
+                'hasarmoreddoor','hasvisiophone','hasoffice','hastoiletcount',
+                'hasfireplace','terracesurface','terraceorientation',
+                'gardensurface','parkingcountindoor','parkingcountoutdoor', 'toiletcount',
+                'hasphotovoltaicpanels', 'streetfacadewidth','buildingconstructionyear',
+                'facedecount', 'landsurface'], inplace=True, errors='ignore') 
 
-df = pd.read_csv("Data/Raw_data.csv")
-print("Original type: \n", df["type"])
-    
-split_type_column(df)
-    
-print("After splitting type:\n", df["type"]) 
-print("After splitting subtype:\n", df["subtype"])  
-df.to_csv('Data/Cleaned_data.csv', index=False)
+# Drop unused rows# 
+df.dropna(subset=["price",'bedroomcount','habitablesurface', 'buildingcondition', 'epcscore'], inplace=True) #3998 found and empty columns others
 
 
-
-# Remove duplicates excluding 'zimmo code'
-original_dupl = len(df)
-df = df.drop_duplicates(subset=df.columns.difference(['zimmo code'])) # Excluded zimmo code from duplicates as a double check
-duplicates_removed = original_dupl - len(df)
-
-# Count and remove whitespace
-modified_count = 0
-
-# Loop over each column in the DataFrame
-for column in df.columns:
-    # Check if the column contains strings
-    if df[column].dtype == "object":
-        # Convert all values in the column to strings
-        original = df[column].astype(str)
-        # Remove whitespace from each value
-        cleaned = original.str.strip()
-        # Count how many values were changed
-        modified_count += (original != cleaned).sum()
-        # Replace original column with cleaned version
-        df[column] = cleaned
-
-# Print the cleanup summary 
-print(f"Duplicates removed: {duplicates_removed}")
-print(f"String values modified by whitespace stripping: {modified_count}")
-
-# removing rows living area empty
-df.rename(columns={
-    "living area(mÂ²)": "living area(m²)"
-}, inplace=True)
-# "ground area(mÂ²)": "ground area(m²)"
-df.dropna(subset=["living area(m²)", "bedroom", "bathroom", 'EPC(kWh/m²)'], inplace=True)
-
-# removing unnecessary columns
-df = df.drop('street', axis=1)
-df = df.drop('number', axis=1)
-df = df.drop('url', axis=1)
-df = df.drop('ground area(m²)', axis=1)
-df = df.drop('mobiscore', axis=1)
-df = df.drop('zimmo code', axis=1)
-
-# replace null values
-    # checks null values, 
-    #df.isnull().sum()
-
-df.fillna(np.nan).replace([np.nan], [None])
-df.isnull().sum()
-
-
-#change float to integer price bedroom bathroom garden
-
-df['price'] = df['price'].astype(int)
-df['bedroom'] = df['bedroom'].replace('NaN', pd.NA).fillna(0).astype(int)
-df['bathroom'] = df['bathroom'].replace('NaN', pd.NA).fillna(0).astype(int)
-df['garage'] = df['garage'].replace('NaN', pd.NA).fillna(0).astype(int)
-df['garden'] = df['garden'].replace('NaN', pd.NA).fillna(0).astype(int)
-df['year built'] = df['year built'].replace('NaN', pd.NA).fillna(0).astype(int)
+# Replace empty booleans with False
+df.fillna({'hasgarden':'False', 'hasswimmingpool': 'False', 'hasterrace': 'False',
+           'haslift':'False'}, inplace=True)
 
 df.info()
+print(df.isna().sum()* 100 /len(df))
 
-# Replacing values
-df['garage'] = df['garage'].fillna(0)
-df['renovation obligation'] = df['renovation obligation'].fillna('False')
 
 # dropping cleaned dataframe to a cleaned data file
 df.to_csv('Data/Cleaned_data.csv', index=False)

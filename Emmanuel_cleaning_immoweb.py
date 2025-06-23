@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the CSV file
-df = pd.read_csv("Data/immoweb-dataset/immo_raw_dataset.csv")  
+df = pd.read_csv("Data/Raw_data.csv")  
 
 
 # Clean column names
@@ -21,31 +21,14 @@ df.drop(columns=['unnamed:_0', 'url', 'id', 'monthlycost', 'hasbalcony', 'access
                 'hasphotovoltaicpanels', 'streetfacadewidth','buildingconstructionyear',
                 'facedecount', 'landsurface'], inplace=True, errors='ignore') 
 
-df.info()
-# Drop unused rows
-#landsurface
-#,
-#                   ,
-#                     
-# ,'facedecount' on appartment
-# 
+# Drop unused rows# 
 df.dropna(subset=["price",'bedroomcount','habitablesurface', 'buildingcondition', 'epcscore'], inplace=True) #3998 found and empty columns others
-#df.drop(df[df.landsurface < 50].index, inplace=True)
 
-
-
-# replace false
+# Replace empty booleans with False
 df.fillna({'hasgarden':'False', 'hasswimmingpool': 'False', 'hasterrace': 'False',
            'haslift':'False', 'hasgarden':'False', 'hasswimmingpool': 'False'}, inplace=True)
 
-
-#print(df.isna().sum()* 100 /len(df))
-
-#print(df.groupby({'type':'apartment'})['haslift'].isna())
 print(df.isna().sum()* 100 /len(df))
-
-#df['haslift'].groupby('type').median()
-df.info()
 
 """
 # fill missing boolean values
