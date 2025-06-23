@@ -69,6 +69,9 @@ cat_cols = ['type', 'subtype', 'province', 'locality', 'buildingcondition','epcs
 for col in cat_cols:
     df[col] = df[col].astype('string').str.strip().str.lower().str.replace("_", " ")
 
+# Price per square meter
+df['price_per_m2'] = round(df['price'] / df['habitablesurface'],2)
+
 df.info()
 
 # Save cleaned data
