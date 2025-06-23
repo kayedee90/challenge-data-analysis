@@ -31,13 +31,19 @@ Visuals include:
 - 
 - 
 - 
-## 🔍 Key Insights
+## 🔍 Data Cleaning
 - Data cleaned: 0 duplicates removed, 0 string values normalized
-- 
-- 
+- We infered and imputed missing values to be False in the following data: hasgarden, hasswimmingpool, hasterrace
+- Removed datasets: bathroomcount, roomcount, hasattic,hasbasement, hasdressingroom, diningroomsurface, hasdiningroom, floorcount, streetfacadewidth, floodzonetype, heatingtype, hasheatpump, hasvoltaicpanels, hasthermicpanels, kitchensurface, kitchentype,haslivingroom, livingroomsurface, gardenorientation, hasairconditioning, hasarmoreddoor, hasvisiophone, hasoffice, hastoiletcount, hasfireplace, terracesurface, terraceorientation, gardensurface, parkingcountindoor, parkingcountoutdoor
 - 
 - 
 
+## 🔍 Key Insights
+- 
+-
+- 
+- 
+- 
   
 ## 👥 Contributors
 - [Kenny](https://github.com/kayedee90)
@@ -46,8 +52,8 @@ Visuals include:
 
   
 ## 🕓 Timeline
-- 20/06/2025 – Kickoff - Cleaning & initial analysis
-- 23/06/2025 – 
+- 20/06/2025 – Kickoff - Initial cleaning
+- 23/06/2025 – Final cleaning
 - 24/06/2025 – 
 - 26/06/2025 – Presentation day
 
