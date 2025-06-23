@@ -1,0 +1,1 @@
+print(df.isna().sum()* 100 /len(df))
