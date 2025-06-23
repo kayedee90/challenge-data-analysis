@@ -1,7 +1,11 @@
 import numpy as np
 import pandas as pd
 
-def split_type_column(df):
+df = pd.read_csv("./Data/immoweb-dataset.csv")
+df.info()
+
+
+""" def split_type_column(df):
 
     def type_split(row):
         if '(' in row:
@@ -32,3 +36,4 @@ if __name__ == "__main__":
 
     
 
+ """

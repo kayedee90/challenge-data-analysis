@@ -1,0 +1,59 @@
+drop rows:
+
+bedroomcount
+habitablesurface
+buildingcondition
+buildingconstructionyear ?
+facedecount ?
+haslift ?
+
+landsurface: drop missing values, 1 and 10 
+hasgarden replace False if na 
+hasswimmingpool replace False if na
+hasterrace replace False if na
+
+epcscore  
+ 
+
+drop columns:
+
+bathroomcount
+roomcount
+hasattic
+hasbasement
+hasdressingroom
+diningroomsurface
+hasdiningroom
+floorcount
+streetfacadewidgth
+floodzonetype
+heatingtype ?
+hasheatpump
+hasvoltaicpanels
+hasthermicpanels
+kitchensurface
+kitchentype
+haslivingroom
+livingroomsurface
+gardenorientation
+hasairconditioning
+hasarmoreddoor
+hasvisiophone
+hasoffice
+hastoiletcount
+hasfireplace
+terracesurface
+terraceorientation
+gardensurface
+parkingcountindoor
+parkingcountoutdoor
+
+
+
+
+
+	
+
+
+
+
