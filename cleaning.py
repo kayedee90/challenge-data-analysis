@@ -32,13 +32,32 @@ df.fillna({'hasgarden':'False', 'hasswimmingpool': 'False', 'hasterrace': 'False
 df.info()
 print(df.isna().sum()* 100 /len(df))
 
+# Remove duplicates excluding 'zimmo code'
+original_dupl = len(df)
+df = df.drop_duplicates(subset=df.columns.difference(['zimmo code'])) # Excluded zimmo code from duplicates as a double check
+duplicates_removed = original_dupl - len(df)
 
-# dropping cleaned dataframe to a cleaned data file
+# Count and remove whitespace
+modified_count = 0
+
+# Loop over each column in the DataFrame
+for column in df.columns:
+    # Check if the column contains strings
+    if df[column].dtype == "object":
+        # Convert all values in the column to strings
+        original = df[column].astype(str)
+        # Remove whitespace from each value
+        cleaned = original.str.strip()
+        # Count how many values were changed
+        modified_count += (original != cleaned).sum()
+        # Replace original column with cleaned version
+        df[column] = cleaned
+
+
+# Print the cleanup summary 
+print(f"Duplicates removed: {duplicates_removed}")
+print(f"String values modified by whitespace stripping: {modified_count}")
+
+# Save cleaned data
 df.to_csv('Data/Cleaned_data.csv', index=False)
 
-# reading info from the cleaned data
-#df2 = pd.read_csv("Data/Cleaned_data.csv")
-
-# removing Unnamed column cleaned data
-#df2 = df2.drop('Unnamed: 0', axis=1)
-#df2.info()
