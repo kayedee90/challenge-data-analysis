@@ -58,22 +58,38 @@ print(f"String values modified by whitespace stripping: {modified_count}")
 bool_cols = ['haslift', 'hasgarden', 'hasswimmingpool', 'hasterrace']
 for col in bool_cols:
     df[col] = df[col].str.lower().map({'true': True, 'false': False}).astype('boolean')
+df[bool_cols] = df[bool_cols].astype(int)
+
+"""
+# Convert boolean columns to integers (optional: True→1, False→0)
+bool_cols = ['haslift', 'hasgarden', 'hasswimmingpool', 'hasterrace']
+df[bool_cols] = df[bool_cols].astype(int)
+"""
 
 # Categories to convert to INT
 int_cols = ['bedroomcount', 'habitablesurface', 'price'] 
 for col in int_cols:
     df[col] = df[col].astype(int)
-
+df.info()
 # Categories to convert to STR
 cat_cols = ['type', 'subtype', 'province', 'locality', 'buildingcondition','epcscore']
 for col in cat_cols:
     df[col] = df[col].astype('string').str.strip().str.lower().str.replace("_", " ")
 
+
+"""
+categorical_cols = ['type', 'subtype', 'province', 'locality', 'buildingcondition', 'epcscore']
+df = pd.get_dummies(df, columns=categorical_cols, drop_first=True)
+"""
+
+
 # Price per square meter
 df['price_per_m2'] = round(df['price'] / df['habitablesurface'],2)
-
 df.info()
-
 # Save cleaned data
 df.to_csv('Data/Cleaned_data.csv', index=False)
 print(f"String values modified by whitespace stripping: {modified_count}")
+
+
+# Optionally treat postcode as a categorical variable
+# df = pd.get_dummies(df, columns=['postcode'], drop_first=True)df.info()
