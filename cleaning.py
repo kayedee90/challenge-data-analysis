@@ -62,22 +62,6 @@ for col in cat_cols:
 # Calculate price per square meter
 df['price_per_m2'] = round(df['price'] / df['habitablesurface'], 2)
 
-# Drop extreme values based on type, subtype, habitablesurface, and price_per_m2
-df = df[
-    ((df['type'] == 'apartment') & (df['habitablesurface'] < 5000)) |
-    ((df['type'] == 'house') & (df['habitablesurface'] < 10100))
-]
-
-df = df[
-    ((df['subtype'] == 'house') & (df['price_per_m2'] < 20000)) |
-    (df['subtype'] != 'house')
-]
-
-df = df[
-    ((df['subtype'] == 'villa') & (df['price_per_m2'] < 20000)) |
-    (df['subtype'] != 'villa')
-]
-
 df.info()
 
 # Save cleaned and filtered data

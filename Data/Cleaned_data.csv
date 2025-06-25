@@ -4611,6 +4611,7 @@ house,villa,5,liège,waimes,4950,211,good,0,1,1,1,d,495000,2345.97
 house,house,3,walloon brabant,rixensart,1330,170,good,0,0,0,0,d,580000,3411.76
 house,villa,4,antwerp,aartselaar,2630,400,good,0,1,0,1,c,965000,2412.5
 house,house,4,flemish brabant,leuven,3000,340,as new,0,0,0,1,c,1100000,3235.29
+house,house,4,west flanders,knokke-zoute,8300,182,good,0,0,0,1,d,3995000,21950.55
 apartment,apartment,1,east flanders,gent,9000,50,to be done up,0,0,0,0,c,175000,3500.0
 apartment,apartment,1,east flanders,gent,9000,57,good,0,0,0,0,b,185000,3245.61
 apartment,apartment,1,east flanders,sint-amandsberg,9040,57,good,0,0,0,0,b,185000,3245.61
@@ -5056,6 +5057,7 @@ house,house,3,east flanders,geraardsbergen,9500,350,as new,0,0,1,1,c,897000,2562
 house,house,3,east flanders,herzele,9550,350,as new,0,0,1,1,c,897000,2562.86
 house,house,3,east flanders,zottegem,9620,350,as new,0,0,1,1,c,897000,2562.86
 apartment,apartment,2,antwerp,deurne,2100,58,good,1,0,0,1,b,169000,2913.79
+apartment,ground floor,2,antwerp,edegem,2650,65000,good,1,0,0,0,c,219000,3.37
 house,house,2,luxembourg,hotton,6990,85,good,0,1,0,1,g,288000,3388.24
 house,house,3,antwerp,brecht,2960,182,good,0,0,0,0,f,465000,2554.95
 apartment,apartment,1,namur,jambes,5100,54,to renovate,1,0,0,0,c,149000,2759.26
@@ -6877,6 +6879,7 @@ house,house,4,namur,namur flawinne,5020,180,good,0,1,0,1,c,340000,1888.89
 house,house,4,walloon brabant,la hulpe,1310,162,good,0,1,0,1,c,450000,2777.78
 house,house,5,brussels,uccle,1180,331,good,0,0,0,0,g,1550000,4682.78
 house,house,2,west flanders,poperinge,8970,67,to renovate,0,0,0,0,f,158000,2358.21
+house,house,4,antwerp,heist-op-den-berg,2220,20,good,0,0,0,1,b,495000,24750.0
 house,villa,3,west flanders,duinbergen,8301,175,to renovate,0,0,0,0,f,1100000,6285.71
 apartment,apartment,3,antwerp,deurne,2100,87,as new,0,0,0,1,b,189000,2172.41
 apartment,apartment,1,antwerp,wilrijk,2610,35,just renovated,1,0,0,1,b,195000,5571.43
@@ -9183,6 +9186,7 @@ house,exceptional property,6,flemish brabant,leuven,3001,360,good,0,1,0,1,c,1350
 house,villa,5,brussels,uccle,1180,500,to be done up,0,1,0,1,g,2150000,4300.0
 house,house,5,brussels,auderghem,1160,387,as new,0,1,1,1,b,2750000,7105.94
 house,villa,7,brussels,woluwe-saint-pierre,1150,988,good,0,1,1,1,g,2900000,2935.22
+house,house,3,west flanders,knokke-heist,8300,127,to renovate,0,0,0,1,f,3500000,27559.06
 house,house,3,west flanders,wevelgem,8560,115,good,0,0,0,1,e,149000,1295.65
 house,house,3,namur,beauraing,5570,90,to renovate,0,1,0,0,g,209000,2322.22
 apartment,kot,1,flemish brabant,leuven,3000,15,as new,0,0,0,0,b,210000,14000.0
@@ -10127,6 +10131,7 @@ apartment,apartment,2,brussels,bruxelles,1120,80,to be done up,1,0,0,1,c,285000,
 apartment,apartment,2,brussels,bruxelles,1120,75,as new,1,0,0,1,b,295000,3933.33
 apartment,apartment,2,brussels,neder-over-heembeek,1120,80,to be done up,1,0,0,1,f,225000,2812.5
 house,house,3,brussels,neder-over-heembeek,1120,160,good,0,1,0,1,e,459000,2868.75
+house,house,3,brussels,bruxelles,1120,6,as new,0,1,0,1,f,395000,65833.33
 apartment,apartment,2,brussels,bruxelles,1120,100,to renovate,0,0,0,1,g,270000,2700.0
 apartment,apartment,2,brussels,bruxelles,1120,100,good,1,0,0,1,d,279000,2790.0
 house,house,4,brussels,neder-over-heembeek,1120,217,good,0,0,0,1,g,495000,2281.11
@@ -11126,6 +11131,7 @@ house,house,3,walloon brabant,wavre,1300,100,good,0,0,0,1,d,250000,2500.0
 house,apartment block,3,walloon brabant,wavre,1300,120,just renovated,0,0,0,1,d,649000,5408.33
 apartment,apartment,3,walloon brabant,wavre,1300,125,good,0,0,0,0,c,265000,2120.0
 house,house,4,walloon brabant,wavre,1300,216,as new,0,1,0,1,a,529000,2449.07
+house,villa,5,walloon brabant,wavre,1300,90,as new,1,1,1,1,b,2850000,31666.67
 apartment,apartment,2,walloon brabant,wavre,1300,72,to renovate,1,0,0,1,c,199000,2763.89
 apartment,duplex,3,walloon brabant,wavre,1300,114,as new,0,0,0,0,b,395000,3464.91
 house,house,4,walloon brabant,haut-ittre,1461,220,to be done up,0,0,0,0,d,510000,2318.18
@@ -11909,6 +11915,7 @@ apartment,ground floor,2,walloon brabant,court-st-etienne,1490,70,as new,1,0,0,1
 house,house,8,walloon brabant,court-saint-etienne,1490,450,as new,0,1,1,1,a,1250000,2777.78
 house,house,4,walloon brabant,court-saint-etienne,1490,160,as new,0,1,0,1,c,495000,3093.75
 apartment,apartment,2,walloon brabant,court-saint-etienne,1490,95,good,0,0,0,1,e,150000,1578.95
+apartment,ground floor,3,walloon brabant,court-saint-etienne,1490,10990,as new,1,0,0,1,a++,399900,36.39
 apartment,ground floor,3,walloon brabant,court-saint-etienne,1490,137,as new,1,1,0,1,a++,434100,3168.61
 apartment,ground floor,3,walloon brabant,court-saint-etienne,1490,136,as new,1,1,0,1,a++,434400,3194.12
 apartment,ground floor,3,walloon brabant,court-saint-etienne,1490,136,as new,1,0,0,1,a++,424600,3122.06
@@ -13878,6 +13885,7 @@ house,bungalow,3,flemish brabant,grimbergen,1850,109,good,0,0,0,1,f,329000,3018.
 house,villa,6,flemish brabant,grimbergen,1850,583,as new,0,1,1,1,c,1850000,3173.24
 house,house,3,flemish brabant,grimbergen,1850,150,good,0,0,0,0,f,315000,2100.0
 house,country cottage,4,flemish brabant,kampenhout,1910,276,to be done up,0,0,0,1,e,499000,1807.97
+house,house,3,flemish brabant,kampenhout,1910,42863,good,0,0,0,1,c,2100000,48.99
 house,exceptional property,6,flemish brabant,kampenhout,1910,334,just renovated,0,0,0,1,b,1190000,3562.87
 house,house,4,flemish brabant,kampenhout buken,1910,206,as new,0,0,0,0,a+,519941,2523.99
 house,house,4,flemish brabant,kampenhout,1910,200,as new,0,1,0,1,b,590000,2950.0
@@ -17145,6 +17153,7 @@ house,house,3,antwerp,putte beerzel,2580,207,to renovate,0,0,0,1,f,285000,1376.8
 house,house,4,antwerp,putte,2580,310,good,0,0,0,1,c,595000,1919.35
 house,house,3,antwerp,putte,2580,172,to renovate,0,1,0,1,f,324000,1883.72
 house,villa,5,antwerp,putte,2580,220,good,0,1,0,1,c,595000,2704.55
+house,farmhouse,3,antwerp,putte,2580,52237,good,0,0,0,0,f,1195000,22.88
 house,mixed use building,2,antwerp,putte,2580,188,to renovate,0,0,0,1,e,269000,1430.85
 house,house,3,antwerp,putte,2580,105,good,0,0,0,1,e,325000,3095.24
 house,house,4,antwerp,putte,2580,163,good,0,0,0,1,d,359000,2202.45
@@ -23099,6 +23108,7 @@ apartment,apartment,2,limburg,bocholt,3950,92,as new,1,0,0,1,a,340000,3695.65
 house,house,3,limburg,bocholt,3950,131,good,0,0,0,0,d,269000,2053.44
 apartment,apartment,2,limburg,bocholt,3950,86,as new,1,0,0,1,a,325000,3779.07
 house,country cottage,5,limburg,bocholt,3950,515,good,0,0,0,1,b,895000,1737.86
+house,house,3,limburg,bocholt,3950,22189,good,0,0,0,0,b,849000,38.26
 house,house,3,limburg,bree,3960,584,good,0,0,0,0,e,500000,856.16
 house,house,4,limburg,bree,3960,117,to renovate,0,0,0,0,f,249000,2128.21
 house,villa,3,limburg,bree,3960,497,as new,0,0,1,1,b,845000,1700.2
@@ -35408,6 +35418,7 @@ apartment,apartment,3,west flanders,oostende,8400,213,good,1,0,0,1,b,435000,2042
 apartment,duplex,3,west flanders,oostende,8400,108,good,0,0,0,1,d,249000,2305.56
 apartment,apartment,2,west flanders,oostende,8400,87,good,1,0,0,1,b,475000,5459.77
 house,house,3,west flanders,oostende,8400,121,to renovate,0,0,0,1,f,399000,3297.52
+apartment,apartment,1,west flanders,oostende,8400,5685,good,0,0,0,1,c,149000,26.21
 apartment,apartment,2,west flanders,oostende,8400,83,good,1,0,0,1,b,170000,2048.19
 apartment,apartment,1,west flanders,oostende,8400,63,as new,1,0,0,1,a,299000,4746.03
 apartment,apartment,2,west flanders,oostende,8400,82,as new,1,0,0,1,b,615000,7500.0
@@ -36193,6 +36204,7 @@ apartment,apartment,4,west flanders,knokke-heist,8300,180,as new,1,1,0,1,e,25950
 apartment,apartment,3,west flanders,knokke-heist,8300,150,as new,1,1,0,1,b,3495000,23300.0
 apartment,duplex,3,west flanders,knokke-heist,8300,96,just renovated,1,0,0,1,b,1125000,11718.75
 house,house,4,west flanders,knokke-heist,8300,200,as new,0,0,0,1,a,830000,4150.0
+house,house,4,west flanders,knokke-zoute,8300,437,as new,0,0,1,1,c,9450000,21624.71
 apartment,ground floor,2,west flanders,knokke-heist,8300,75,as new,1,1,0,1,b,615000,8200.0
 apartment,apartment,4,west flanders,knokke-heist,8300,164,as new,1,0,0,1,a,2725000,16615.85
 house,house,4,west flanders,knokke-heist,8300,316,just renovated,0,0,0,1,b,1495000,4731.01
@@ -36317,6 +36329,7 @@ apartment,duplex,6,west flanders,knokke-heist,8300,230,as new,1,0,0,1,c,1525000,
 apartment,apartment,3,west flanders,knokke-heist knokke,8300,161,as new,1,0,1,1,b,3695000,22950.31
 apartment,apartment,2,west flanders,knokke-heist,8300,62,as new,1,0,0,0,b,585000,9435.48
 apartment,penthouse,2,west flanders,knokke-heist,8300,70,as new,1,0,0,1,b,975000,13928.57
+house,house,5,west flanders,knokke-heist,8300,326,good,0,0,0,1,d,6750000,20705.52
 apartment,penthouse,3,west flanders,knokke-heist,8300,147,good,1,0,0,0,b,995000,6768.71
 house,exceptional property,5,west flanders,knokke-heist,8300,467,as new,0,1,1,1,a,9795000,20974.3
 apartment,apartment,3,west flanders,knokke-heist,8300,138,as new,1,0,0,1,b,2995000,21702.9
@@ -36393,6 +36406,7 @@ house,villa,6,west flanders,knokke-heist,8300,276,as new,0,0,0,0,c,2985000,10815
 apartment,apartment,3,west flanders,knokke-heist,8300,148,good,1,0,0,1,f,2995000,20236.49
 apartment,apartment,2,west flanders,knokke,8300,78,good,1,0,0,0,c,599000,7679.49
 house,house,3,west flanders,knokke-heist,8300,155,as new,0,0,0,1,b,1365000,8806.45
+house,villa,3,west flanders,het zoute,8300,135,to renovate,0,0,0,0,f,3500000,25925.93
 apartment,flat studio,1,west flanders,knokke-heist,8300,39,as new,1,0,0,1,b,299000,7666.67
 apartment,apartment,2,west flanders,knokke-heist,8300,55,as new,1,0,0,0,b,585000,10636.36
 apartment,apartment,3,west flanders,knokke,8300,105,as new,1,0,0,0,b,845000,8047.62
@@ -36448,9 +36462,11 @@ apartment,apartment,1,west flanders,knokke-heist,8300,61,good,0,0,0,0,b,549000,9
 apartment,duplex,4,west flanders,knokke-heist,8300,129,good,0,0,0,1,f,649500,5034.88
 apartment,apartment,4,west flanders,knokke-heist,8300,243,as new,1,0,0,1,a,6100000,25102.88
 apartment,apartment,2,west flanders,knokke-heist,8300,60,as new,1,0,0,1,a,525000,8750.0
+house,villa,4,west flanders,knokke-heist,8300,182,good,0,0,0,1,d,3995000,21950.55
 apartment,apartment,3,west flanders,knokke-heist,8300,142,as new,1,0,0,0,b,1495000,10528.17
 house,house,4,west flanders,knokke-heist,8300,158,as new,0,0,0,1,b,945000,5981.01
 house,villa,7,west flanders,knokke-heist,8300,498,to renovate,0,1,0,1,f,8250000,16566.27
+house,villa,6,west flanders,knokke-heist,8300,420,as new,1,0,0,1,b,8995000,21416.67
 apartment,apartment,2,west flanders,knokke,8300,72,as new,1,1,0,1,a,695000,9652.78
 house,house,2,west flanders,knokke-heist,8300,69,to renovate,0,0,0,0,e,395000,5724.64
 apartment,apartment,3,west flanders,knokke,8300,156,as new,1,0,0,1,a,997500,6394.23
@@ -36531,6 +36547,7 @@ house,villa,4,west flanders,knokke-heist,8300,188,good,0,1,1,1,b,1295000,6888.3
 house,house,5,west flanders,knokke-heist,8300,240,good,0,0,0,0,c,1595000,6645.83
 house,villa,5,west flanders,knokke-heist,8300,263,as new,0,0,0,1,b,2350000,8935.36
 house,house,5,west flanders,knokke-heist,8300,295,as new,0,0,0,0,a+,4250000,14406.78
+house,house,7,west flanders,knokke-heist,8300,212,just renovated,0,0,1,1,b,5650000,26650.94
 house,villa,8,west flanders,het zoute,8300,900,good,0,0,1,0,c,5995000,6661.11
 apartment,apartment,3,west flanders,knokke,8300,106,as new,1,0,0,0,b,1650000,15566.04
 house,villa,4,west flanders,knokke-heist,8300,317,as new,0,0,0,1,c,1795000,5662.46
@@ -36709,6 +36726,7 @@ apartment,apartment,3,west flanders,knokke-heist,8300,187,good,1,1,0,1,b,2000000
 house,house,3,west flanders,knokke-heist,8300,152,to renovate,0,0,0,1,f,1495000,9835.53
 house,villa,4,west flanders,knokke-heist,8300,202,good,0,1,0,1,c,2585000,12797.03
 house,villa,6,west flanders,knokke-heist,8300,289,as new,0,0,0,1,b,5650000,19550.17
+house,villa,6,west flanders,knokke-heist knokke,8300,414,as new,1,0,0,1,b,8995000,21727.05
 apartment,apartment,1,west flanders,knokke-heist,8300,43,as new,1,0,0,0,b,420000,9767.44
 apartment,apartment,2,west flanders,knokke,8300,92,good,0,0,0,0,f,535000,5815.22
 apartment,apartment,1,west flanders,knokke-heist,8300,43,good,1,0,0,0,a,398500,9267.44
@@ -36841,8 +36859,10 @@ apartment,apartment,3,west flanders,knokke,8300,126,as new,1,0,0,1,a,1195000,948
 apartment,apartment,3,west flanders,knokke-zoute,8300,96,as new,1,0,0,1,a,1649000,17177.08
 apartment,apartment,2,west flanders,knokke-heist,8300,83,as new,1,0,0,1,b,860000,10361.45
 house,house,4,west flanders,knokke-heist,8300,148,good,0,0,0,0,c,895000,6047.3
+house,villa,3,west flanders,knokke-heist,8300,170,to renovate,0,1,0,1,f,3500000,20588.24
 house,villa,4,west flanders,knokke-heist,8300,396,as new,0,1,0,1,b,3850000,9722.22
 house,villa,5,west flanders,knokke-heist,8300,452,as new,1,0,0,1,a,6975000,15431.42
+house,villa,6,west flanders,knokke-zoute,8300,420,just renovated,1,0,0,1,b,8995000,21416.67
 apartment,apartment,3,west flanders,knokke-heist,8300,143,as new,1,1,0,1,b,3495000,24440.56
 apartment,apartment,3,west flanders,knokke-heist,8300,163,as new,1,0,0,1,a,4600000,28220.86
 apartment,apartment,3,west flanders,knokke-heist,8300,135,as new,1,0,0,1,a,1650000,12222.22
@@ -36925,6 +36945,7 @@ apartment,apartment,3,west flanders,knokke-heist knokke,8300,89,as new,1,0,0,0,b
 apartment,apartment,2,west flanders,knokke-heist,8300,85,as new,1,0,0,1,b,897000,10552.94
 apartment,penthouse,3,west flanders,knokke-heist,8300,121,as new,1,0,0,0,b,1345000,11115.7
 apartment,duplex,2,west flanders,knokke-heist,8300,86,as new,1,0,0,0,a,1190000,13837.21
+house,house,6,west flanders,knokke-heist,8300,305,good,0,1,0,1,c,6800000,22295.08
 apartment,apartment,1,west flanders,knokke-heist,8300,77,as new,1,0,0,0,b,750000,9740.26
 apartment,penthouse,2,west flanders,knokke-heist,8300,130,as new,1,0,0,1,b,1195000,9192.31
 apartment,apartment,2,west flanders,knokke-heist,8300,99,just renovated,1,0,0,1,b,1198000,12101.01
@@ -37024,6 +37045,7 @@ apartment,apartment,2,west flanders,knokke,8300,85,as new,1,0,0,1,b,595000,7000.
 apartment,apartment,3,west flanders,knokke-heist,8300,76,good,0,0,0,1,a++,815000,10723.68
 apartment,apartment,2,west flanders,knokke-heist,8300,59,as new,0,0,0,1,a,899000,15237.29
 apartment,apartment,3,west flanders,knokke-heist,8300,113,as new,0,0,0,0,d,1795000,15884.96
+house,villa,7,west flanders,knokke-heist,8300,289,good,0,0,0,0,b,5875000,20328.72
 house,house,5,west flanders,knokke,8300,172,as new,0,0,1,1,c,1395000,8110.47
 apartment,apartment,2,west flanders,knokke-heist,8300,73,good,1,0,0,0,b,695000,9520.55
 apartment,apartment,3,west flanders,knokke-heist,8300,84,as new,1,0,0,0,a,1375000,16369.05
