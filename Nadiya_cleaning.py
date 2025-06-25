@@ -4,10 +4,10 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import geopandas as gpd
 
-# File with property data
+# File with property data:
 df = pd.read_csv("./Data/Cleaned_data.csv")
 
-# File linking postal codes with municipality names, provided by Emmanuel.
+# File linking postal codes with municipality names, provided by Emmanuel:
 # I had to slightly modify it: replace ; with , as separator, and change column name from Post code to postcode for join function to work.
 pc = pd.read_csv("./Data/cities2_formatted.csv")
 
