@@ -27,21 +27,21 @@ Run the script:
 - python cleaning.py -> Cleans the dataset stored in /data/Raw_data.csv -> stores the cleaned data in /data/Cleaned_data.csv
 - Nadiya.py Shows a visual representation of the most and least expensive areas in belgium
 - Emmanuel.ipynb -> tracks and visualises outliers among all features and various feature combinations
-- Kenny.ipynb -> Visualises the distribution of properties by area surface, creates and interactive chart to sort this distribution by subtype and plots a heatmap of the correlation of all features to Price
+- Kenny.ipynb -> Visualises the distribution of properties by area surface, creates an interactive chart to sort this distribution by subtype and plots a heatmap of the correlation of all features to Price
 
 ## 📊 Visuals
 All charts are generated using a mix of ##seaborn, Plotly and matplotlib.  
 Visuals include:
 - Maps of most and least expensive areas in Belgium
-- Heatmaps of features corrolating to price
+- Heatmaps of features correlating to price
 - Various visual breakdowns of outliers per feature
-- Slides are located in the /presentation folder
+- Slides are located in the /Presentation folder
   
 ## 🔍 Data Cleaning
 - Starting dataset: 80.199rows, 37 columns
 - Data cleaned: 964 duplicates removed, 36.003 rows removed for excessive missing values
-- We infered and imputed missing values to be False in the following data: hasgarden, hasswimmingpool, hasterrace, haslift
-- Removed datasets due to exessive missing values and low impact: bathroomcount, roomcount, hasattic,hasbasement, hasdressingroom, diningroomsurface, hasdiningroom, floorcount, streetfacadewidth, floodzonetype, heatingtype, hasheatpump, hasvoltaicpanels, hasthermicpanels, kitchensurface, kitchentype,haslivingroom, livingroomsurface, gardenorientation, hasairconditioning, hasarmoreddoor, hasvisiophone, hasoffice, hastoiletcount, hasfireplace, terracesurface, terraceorientation, gardensurface, parkingcountindoor, parkingcountoutdoor
+- We inferred and imputed missing values to be False in the following data: hasgarden, hasswimmingpool, hasterrace, haslift
+- Removed datasets due to excessive missing values and low impact: bathroomcount, roomcount, hasattic, hasbasement, hasdressingroom, diningroomsurface, hasdiningroom, floorcount, streetfacadewidth, floodzonetype, heatingtype, hasheatpump, hasvoltaicpanels, hasthermicpanels, kitchensurface, kitchentype, haslivingroom, livingroomsurface, gardenorientation, hasairconditioning, hasarmoreddoor, hasvisiophone, hasoffice, hastoiletcount, hasfireplace, terracesurface, terraceorientation, gardensurface, parkingcountindoor, parkingcountoutdoor
 - Remaining dataset: 44.196 rows, 14 columns.
 - We decided to add 1 column: Price/m² for a new total of 15 columns
 
@@ -57,7 +57,7 @@ the difference is however smaller - about 10%.
 
 2. The 10 most expensive municipalities in Flanders are either located at the coast
 (Knokke, Ramskapelle, Oostduinkerke, Wilskerke) or associated with big cities:
-Ghent (Ghent, Vinderhote), Antwerpen (Antwerpen, Deurne),
+Ghent (Vinderhoute), Antwerpen (Antwerpen, Deurne),
 or the university town of Leuven (Leuven, Heverlee).
 
 3. The top 10 least expensive municipalities in Flanders are usually associated with
@@ -83,9 +83,9 @@ and Wallonia (Louvain-la-Neuve area).
 
 7. The most expensive properties in Belgium are about 10 times more expensive than the cheapest properties.
   
-8. The majority of properties lie around the 100m² to 200m² point, with the peak being at 100m²  
+8. The majority of properties lie in the range 100m² to 200m², with the peak being at 100m²  
 
-9. The top 5 features most correlated with price are:
+9. The top 5 features most strongly correlated with price are:
    - **habitablesurface**: 0.58  
      Largest driver of price — bigger living spaces consistently lead to higher overall prices.
    - **price_per_m²**: 0.51  
@@ -98,18 +98,18 @@ and Wallonia (Louvain-la-Neuve area).
      Better condition is linked to higher pricing, but with notable variability across conditions — not a dominant factor alone.
 
 11. Extreme outliers have been identified using boxplots:   
-•    Duplex, penthouse, groundfloor, triplex, kot have more than 5 bedrooms  
-•    The surface of ground floor subtype is more than 10 thousand m2  
-•    A lot of outliers have apartment values more than 2 million EUR  
-•    More than 20 thousand EUR per m2 have been identified in apartments as outliers  
-•    Houses have outliers in apartment block reaching 100 rooms  
-•    The surface of farmhouses are reaching 50 thousand m2 and house subtype more than 40 thousand m2  
-•    A lot of prices of houses are more than 2 million EUR  
-•    A lot of houses are reaching more than 10 thousand per m2  
+•    Duplex, penthouse, groundfloor, triplex, kot that have more than 5 bedrooms  
+•    The surface of ground floor subtype that is more than 10 thousand m2  
+•    A lot of outliers are apartments valued at more than 2 million EUR  
+•    Apartments with more than 20 thousand EUR per m2  
+•    Houses in the apartment block category that have 100 or more rooms  
+•    The surface of farmhouses reaching 50 thousand m2 and house subtypes more than 40 thousand m2  
+•    Houses valued at more than 2 million EUR  
+•    Houses valued at more than 10 thousand for m2  
 
 
-12. KDE plot to see the distribution of various non-numerical versus p/m2  
-Plotted using KDE to have a global view on the dependence of p/m2 on the type of the property, location and score:  
+12. KDE plots to see the distribution of various non-numerical parameters versus price per m2 (p/m2).  
+Plotted using KDE to have a global view on the dependence of p/m2 on the type of the property, location and energy score:  
 •    The higher the EPC Score the higher the p/m2  
 •    The Flat studio seems the least expensive per m2, while the penthouse subtype tends to be the most expensive on p/m2 for apartments  
 •    Apartment block seems the least expensive, while Villa subtype ten ds to be the most expensive on p/m2 for house  
