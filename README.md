@@ -27,7 +27,7 @@ Run the script:
 - python cleaning.py -> Cleans the dataset stored in /data/Raw_data.csv -> stores the cleaned data in /data/Cleaned_data.csv
 - Nadiya.py Shows a visual representation of the most and least expensive areas in belgium
 - Emmanuel.ipynb -> tracks and visualises outliers among all features and various feature combinations
-- Kenny.ipynb -> Visualises the distribution of properties by area surface, creates and interactive chart to sort this distribution by subtype and plots a heatmap of the corrolation of all features to Price
+- Kenny.ipynb -> Visualises the distribution of properties by area surface, creates and interactive chart to sort this distribution by subtype and plots a heatmap of the correlation of all features to Price
 
 ## 📊 Visuals
 All charts are generated using a mix of ##seaborn, Plotly and matplotlib.  
