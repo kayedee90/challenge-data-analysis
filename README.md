@@ -45,7 +45,42 @@ Visuals include:
 - We decided to add 1 column: Price/m² for a new total of 15 columns
 
 ## 🔍 Key Insights
-- 
+- Based on the parameter -- price per square meter ---
+(medium averaged per postal code, without differentiating by property type)
+we conclude:
+
+1. Flanders are on average more expensive than Wallonia (and the whole of Belgium).
+Between the cheapest properties the difference is about 30%.
+Between the most expensive properties (except for Knokke and Leuven)
+the difference is however smaller - about 10%.
+
+2. The 10 most expensive municipalities in Flanders are either located at the coast
+(Knokke, Ramskapelle, Oostduinkerke, Wilskerke) or associated with big cities:
+Ghent (Ghent, Vinderhote), Antwerpen (Antwerpen, Deurne),
+or the university town of Leuven (Leuven, Heverlee).
+
+3. The top 10 least expensive municipalities in Flanders are usually associated with
+remote rural areas: Nokere, Sint-Denijs, Alveringem, Bossuit, Aspelare,
+Boezinge, Watou, Schalkhoeven, Leisele, Vliermaalroot.
+
+4. Top 10 most expensive municipalities in Wallonia are associated mostly
+with the area around Waterloo and Louvain-la-Neuve (Waterloo, Lasne-Chapelle-Saint-Lambert,
+Ottignies, Mont-Saint-Guibert, Bornival),
+city of Liege (Magnée),
+Eupen-Aachen border with Germany (Hauset, Raeren),   
+province of Luxembourg (Sélange, Habay-la-Vieille),
+and some small villages in central Ardennes (Méan, Filot).  
+
+5. In Wallonia top 10 cheapest municipalities are again associated with remote rural areas,
+located mostly in the south-west part of Ardennes:
+Hives, Forge-Philippe, Momignies, Bourlers, Framont, Lompret,
+Wasmes, Corbion, Tourinne, Sohier, Wellin.   
+
+6. The Ixelles and Ukkel communes of Brussels are in the top 10 of most expensive municipalities in Belgium,
+but are still cheaper than the most expensive municipalities of Flanders (Knokke, Leuven, Antwerpen)
+and Wallonia (Louvain-la-Neuve area).
+
+7. The most expensive properties in Belgium are about 10 times more expensive than the cheapest properties. 
 -
 - 
 - 
