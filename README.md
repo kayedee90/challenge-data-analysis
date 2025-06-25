@@ -86,16 +86,16 @@ and Wallonia (Louvain-la-Neuve area).
 8. The majority of properties lie around the 100m² to 200m² point, with the peak being at 100m²  
 
 9. The top 5 features most correlated with price are:
-   - **price_per_m2**: 0.58  
-     Strongest indicator — higher price per square meter typically means a higher total price.
-   - **bedroomcount**: 0.36  
-     More bedrooms generally align with higher prices, though the relationship levels off after ~5.
-   - **hasswimmingpool**: 0.29  
-     Properties with pools tend to be more expensive, though there’s overlap with non-pool listings.
-   - **building_condition**: 0.22  
-     Better condition buildings fetch higher prices on average, but variance remains wide.
-   - **habitablesurface**: 0.16  
-     Larger living areas usually drive price up, though not as significantly as other features.
+   - **habitablesurface**: 0.58  
+     Largest driver of price — bigger living spaces consistently lead to higher overall prices.
+   - **price_per_m²**: 0.51  
+     Strong indicator — though correlated with total price, the relationship is nuanced: high price per m² doesn't always mean the most expensive properties.
+   - **bedroomcount**: 0.39  
+     More bedrooms tend to push prices upward, especially up to about 5 bedrooms, after which the trend flattens.
+   - **hasswimmingpool**: 0.27  
+     Properties with pools are generally more expensive, reflecting luxury appeal — though some overlap with non-pool properties exists.
+   - **building_condition**: 0.24  
+     Better condition is linked to higher pricing, but with notable variability across conditions — not a dominant factor alone.
 
 11. Extreme outliers have been identified using boxplots:   
 •    Duplex, penthouse, groundfloor, triplex, kot have more than 5 bedrooms  
