@@ -26,8 +26,8 @@ Dependencies include:
 Run the script:
 - python cleaning.py -> Cleans the dataset stored in /data/Raw_data.csv -> stores the cleaned data in /data/Cleaned_data.csv
 - Nadiya.py Shows a visual representation of the most and least expensive areas in belgium
-- Notebook_EDA_Emmanuel.ipynb -> tracks and visualises outliers among all features and various feature combinations
-- Kenny_jupiter.ipynb -> Visualises the distribution of properties by area surface, creates and interactive chart to sort this distribution by subtype and plots a heatmap of the corrolation of all features to Price
+- Emmanuel.ipynb -> tracks and visualises outliers among all features and various feature combinations
+- Kenny.ipynb -> Visualises the distribution of properties by area surface, creates and interactive chart to sort this distribution by subtype and plots a heatmap of the corrolation of all features to Price
 
 ## 📊 Visuals
 All charts are generated using a mix of ##seaborn, Plotly and matplotlib.  
@@ -35,6 +35,7 @@ Visuals include:
 - Maps of most and least expensive areas in Belgium
 - Heatmaps of features corrolating to price
 - Various visual breakdowns of outliers per feature
+- Slides are located in the /presentation folder
   
 ## 🔍 Data Cleaning
 - Starting dataset: 80.199rows, 37 columns
@@ -80,11 +81,40 @@ Wasmes, Corbion, Tourinne, Sohier, Wellin.
 but are still cheaper than the most expensive municipalities of Flanders (Knokke, Leuven, Antwerpen)
 and Wallonia (Louvain-la-Neuve area).
 
-7. The most expensive properties in Belgium are about 10 times more expensive than the cheapest properties. 
--
-- 
-- 
-- 
+7. The most expensive properties in Belgium are about 10 times more expensive than the cheapest properties.
+  
+8. The majority of properties lie around the 100m² to 200m² point, with the peak being at 100m²  
+
+9. The top 5 features most correlated with price are:
+   - **price_per_m2**: 0.58  
+     Strongest indicator — higher price per square meter typically means a higher total price.
+   - **bedroomcount**: 0.36  
+     More bedrooms generally align with higher prices, though the relationship levels off after ~5.
+   - **hasswimmingpool**: 0.29  
+     Properties with pools tend to be more expensive, though there’s overlap with non-pool listings.
+   - **building_condition**: 0.22  
+     Better condition buildings fetch higher prices on average, but variance remains wide.
+   - **habitablesurface**: 0.16  
+     Larger living areas usually drive price up, though not as significantly as other features.
+
+11. Extreme outliers have been identified using boxplots:   
+•    Duplex, penthouse, groundfloor, triplex, kot have more than 5 bedrooms  
+•    The surface of ground floor subtype is more than 10 thousand m2  
+•    A lot of outliers have apartment values more than 2 million EUR  
+•    More than 20 thousand EUR per m2 have been identified in apartments as outliers  
+•    Houses have outliers in apartment block reaching 100 rooms  
+•    The surface of farmhouses are reaching 50 thousand m2 and house subtype more than 40 thousand m2  
+•    A lot of prices of houses are more than 2 million EUR  
+•    A lot of houses are reaching more than 10 thousand per m2  
+
+
+12. KDE plot to see the distribution of various non-numerical versus p/m2  
+Plotted using KDE to have a global view on the dependence of p/m2 on the type of the property, location and score:  
+•    The higher the EPC Score the higher the p/m2  
+•    The Flat studio seems the least expensive per m2, while the penthouse subtype tends to be the most expensive on p/m2 for apartments  
+•    Apartment block seems the least expensive, while Villa subtype ten ds to be the most expensive on p/m2 for house  
+•    The newer the building conditions, the higher the p/m2  
+•    Ranking of the regions based on the mode of the p/m2 distribution: 1. Brussels, 2. Flanders, 3. Wallonia!  
   
 ## 👥 Contributors
 - [Kenny](https://github.com/kayedee90)
