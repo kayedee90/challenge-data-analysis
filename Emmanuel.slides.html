@@ -5,7 +5,7 @@
 <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
 <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
-<title>Notebook_EDA_Emmanuel slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
+<title>Emmanuel slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
   import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
 </script>
@@ -7496,15 +7496,15 @@ Name: count, dtype: int64
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Outliers-per-subtype-for-apartment-and-house-in-numerical-columns">Outliers per subtype for apartment and house in numerical columns<a class="anchor-link" href="#Outliers-per-subtype-for-apartment-and-house-in-numerical-columns">¶</a></h1><ul>
 <li>Apartment<ul>
-<li>Suggests outliers number bedrooms appartment &gt; 5 in apt, duplex, penthouse, groundfloor, triplex, kot</li>
-<li>Surface &gt; 10k m2 in ground floor 2 outliers</li>
-<li>Bunch of outliers identified more than 1 million EUR</li>
-<li>Bunch of outliers in price per m2</li>
+<li>Duplex, penthouse, groundfloor, triplex, kot have more than 5 bedrooms</li>
+<li>The surface of ground floor subtype is more than 10 thousand m2</li>
+<li>A bunch of outliers have apartment values more than 2 million EUR</li>
+<li>Bunch of outliers in price per m2 more than 10 thousand EUR</li>
 </ul>
 </li>
 <li>House<ul>
 <li>Outliers found in bedroom numbers more than 10 which can be explained in some categories such as appartment block</li>
-<li>Extreme outliers Surface in house &amp; farmhouse</li>
+<li>The surface of farmhouses is reaching 50 thousand m2 and house subtype more than 40 thousand m2</li>
 <li>Bunch of outlier more than 2 million EUR</li>
 <li>Bunch of outliers more than 10K per m2</li>
 </ul>
@@ -7620,7 +7620,29 @@ Name: count, dtype: int64
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=75b4ee35">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ff7ade98">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id=".">.<a class="anchor-link" href="#.">¶</a></h3>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=d47a1ebc">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b19b9631">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id=".">.<a class="anchor-link" href="#.">¶</a></h3>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=896b4700">
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
@@ -7683,12 +7705,12 @@ Name: count, dtype: int64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="KDE-plot-to-see-the-distribution-of-various-non-numerical-versus-p/m2">KDE plot to see the distribution of various non-numerical versus p/m2<a class="anchor-link" href="#KDE-plot-to-see-the-distribution-of-various-non-numerical-versus-p/m2">¶</a></h1><ul>
-<li>EPC Score distribution tends to higher p/m2, the higher the score</li>
-<li>Penthouse subtype tends to higher p/m2 for apartments</li>
-<li>Villa subtype tends to higher p/m2 for house</li>
-<li>The newer the building conditions, the higher p/m2</li>
-<li>Top distribution on region: 1. Brussels, 2. Flanders, 3. Wallonia</li>
+<h1 id="Plotted-using-KDE-to-have-a-global-view-on-the-dependence-of-p/m2-on-the-type-of-the-property,-location-and-score:">Plotted using KDE to have a global view on the dependence of p/m2 on the type of the property, location and score:<a class="anchor-link" href="#Plotted-using-KDE-to-have-a-global-view-on-the-dependence-of-p/m2-on-the-type-of-the-property,-location-and-score:">¶</a></h1><ul>
+<li>The higher the EPC Score the higher the p/m2</li>
+<li>The Flat studio seems the least expensive per m2, while the penthouse subtype tends to be the most expensive on p/m2 for apartments</li>
+<li>Apartment block seems the least expensive, while Villa subtype tends to be the most expensive on p/m2 for house</li>
+<li>The newer the building conditions, the higher the p/m2</li>
+<li>Ranking of the regions based on the mode of the p/m2 distribution: 1. Brussels, 2. Flanders, 3. Wallonia</li>
 </ul>
 </div>
 </div>
